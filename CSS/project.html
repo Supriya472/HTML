@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      text-align: center;
+      background-color: #333;
+      color:white;
+      padding: 10px 0;
+    }
+    nav {
+      background-color:grey;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: gray;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color:white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+    section {
+     font-family: Arial,Helvetica,sans-serif;    
+    font-size: 7px;
+    
+   background: url("D:\HTML\CSS\c1.jpg") repeat;
+    }
+    
+
+    
+    .product {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      border: 1px solid gainsboro;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .product:hover {
+      width: 80px;
+      height: 100px;
+    }
+    form {
+      margin: 0 auto;
+      width: 50%;
+      text-align: left;
+    }
+    form img {
+      position: fixed;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pharmacy</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+
+    <div class="dropdown">
+      <a href="#">Our Medicines</a>
+     <div class="dropdown-content">
+        <a href="#">Fever</a>
+        <a href="#">Muscle Pains</a>
+        <a href="#">Cold & Cough</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Health Care</a>
+      <div class="dropdown-content">
+        <a href="#">Baby Care</a>
+        <a href="#">Skin Care</a>
+        <a href="#">Home Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Pet Care</a>
+      </div>
+    </div>
+    <a href="file:///D:/HTML/CSS/labtest.html">Lab Test</a>
+  </nav>
+  <section>
+    <div id="carousel">
+      <img src="D:\HTML\CSS\ani3.jpg" >
+      <img src="D:\HTML\CSS\ani4.jpg" alt="Offer 2">
+      <img src="D:\HTML\CSS\ani5.jpg" alt="Offer 2">
+
+      
+    </div>
+  </section>
+  <section >
+    <h1>Covid Care</h1>
+    <div class="product">
+        <h3>Covid Test Kit</h3>
+      <img src="D:\HTML\CSS\c1.jpg" width="180" height="100">
+      <p style="color:blue">Rs.40</p>
+      <p style="color:blue">Offer:Rs.30/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Covid Test Kit</h3>
+      <img src="D:\HTML\CSS\c2.jpg" width="180" height="100">
+      <p style="color:blue">Rs.240</p>
+      <p style="color:blue">Offer:Rs.170/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Sanitizer Bottle</h3>
+      <img src="D:\HTML\CSS\c3.jpg" width="180" height="100">
+      <p style="color:blue">Rs.99</p>
+      <p style="color:blue">Offer:Rs.87/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Mask</h3>
+      <img src="D:\HTML\CSS\c4.jpg" width="180" height="100">
+      <p style="color:blue">Rs.45</p>
+      <p style="color:blue">Offer:Rs.30/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+  
+  </section>
+  <section>
+    <h1>Diabetes Care</h1>
+    <div class="product">
+        <h3>BGR 34</h3>
+      <img src="D:\HTML\CSS\d1.jpg"  width="180" height="100">
+     <p style="color:blue">Rs.45</p>
+      <p style="color:blue">Offer:Rs.30/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Dabar Chyawanprakash</h3>
+      <img src="D:\HTML\CSS\d2.jpg"  width="180" height="100">
+     <p style="color:blue">Rs.45</p>
+      <p style="color:blue">Offer:Rs.30/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Colgate Sugarfree</h3>
+      <img src="D:\HTML\CSS\d3.jpg"  width="180" height="100">>
+     <p style="color:blue">Rs.45</p>
+      <p style="color:blue">Offer:Rs.30/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Unibic Cookiese Sugarfree</h3>
+      <img src="D:\HTML\CSS\d4.png"  width="180" height="100">
+     <p style="color:blue">Rs.35</p>
+      <p style="color:blue">Offer:Rs.30/-</p>
+      <button style="color:sandybrown">Add to Cart</button>
+    </div>
+    <!-- Add more products here -->
+  </section>
+  <footer>
+    <p>@copyright. Only for demonstration purposes</p>
+  </footer>
+  
+  <script>
+    var carousel = document.getElementById('carousel');
+    var images = carousel.getElementsByTagName('img');
+    var index = 0;
+
+    setInterval(function() {
+      images[index].style.display = 'none';
+      index = (index + 1) % images.length;
+      images[index].style.display = 'block';
+    }, 2000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab Test Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .container {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+    }
+    
+    .form {
+        margin-right: 250px;
+        width: 30%;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-group label {
+        display: inline;
+        margin-bottom: 5px;
+    }
+    
+    .input-group input[type="text"],
+    .input-group input[type="tel"],
+    .input-group input[type="email"],
+    .input-group select,
+    .input-group input[type="date"],
+    .input-group input[type="time"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        border: 1px solid  gainsboro;
+        border-radius: 5px;
+    }
+    
+    .checkbox-group {
+        margin-top: -5px;
+        margin-left: 20px;
+    }
+    
+    .button-group button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .button-group button[type="submit"] {
+        background-color: violet;
+        color: white;
+    }
+    
+    .button-group button[type="reset"] {
+        background-color: violet;
+        color: white;
+    }
+    
+    .image {
+        position: fixed;
+        top: 50px;
+        right: 120px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <form action="#" method="post">
+            <div class="input-group">
+                <h2>1.Your Contact Details</h2>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="input-group">
+                
+                <label for="patientid">Patient ID:</label>
+                <input type="text" id="patientid" name="patientid">
+            </div>
+            <div class="input-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <h2>2.Address</h2>
+                <label for="house">House Number:</label>
+                <input type="text" id="house" name="house" required>
+            </div>
+            <div class="input-group">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" required>
+            </div>
+            <div class="input-group">
+                <label for="area">Area:</label>
+                <input type="text" id="area" name="area" required>
+            </div>
+            <div class="input-group">
+                <label for="district">District:</label>
+                <select id="district" name="district" required>
+                    <option value="" selected disabled>Choose</option>
+                    <option value="Chosen">Chosen</option>
+                    <!-- Add other district options here -->
+                </select>
+            </div>
+            <div class="input-group">
+                <h2>3.Choose the Test Type:</h2>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="cbc" name="test[]" value="CBC">
+                    <label for="cbc">CBC</label><br>
+                    <input type="checkbox" id="urine" name="test[]" value="Complete Urine">
+                    <label for="urine">Complete Urine</label><br>
+                    <input type="checkbox" id="lipid" name="test[]" value="Lipid Profile">
+                    <label for="lipid">Lipid Profile</label><br>
+                    <input type="checkbox" id="tsh" name="test[]" value="Thyroid Stimulating Hormone (TSH)">
+                    <label for="tsh">Thyroid Stimulating Hormone (TSH)</label><br>
+                    <input type="checkbox" id="glucose" name="test[]" value="Glucose Test">
+                    <label for="glucose">Glucose Test</label><br>
+                </div>
+            </div>
+            <div class="input-group">
+                <h2>4.Do you want a hard copy of the report also?</h2>
+                <input type="radio" id="yes" name="hardcopy" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="hardcopy" value="No">
+                <label for="no">No</label><br>
+            </div>
+            <div class="input-group">
+                <h2>5.Select Your Confortable Date and Time</h2>
+                <input type="date" id="date" name="date" required>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="button-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="image">
+        <img src="D:\HTML\CSS\lab-test.jpg" alt="Lab" width="400">
+    </div>
+</div>
+</body>
+</html>
